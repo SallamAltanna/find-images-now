@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    ports:
+      - "${APP_PORT:-8945}:${APP_PORT:-8945}"
+    env_file:
+      - .env
+    restart: unless-stopped
+    volumes:
+      - .:/app

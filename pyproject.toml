@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "find-images-now"
+version = "0.1.0"
+description = "FINd — An optimised perceptual image hashing library by Find Images Now"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pillow",
+    "numpy",
+    "scipy",
+    "imagehash",
+    "python-multipart",
+    "python-dotenv",
+]
+
+[project.urls]
+"Source Code" = "https://anonymous.4open.science/r/your-anonymous-link"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
