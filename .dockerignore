@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+
+# Testing
+.pytest_cache/
+tests/
+
+# Git
+.git/
+.gitignore
+
+# Mac
+.DS_Store
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
+ 
+
+# Documentation
+*.md
+
+# Development
+run.py
