@@ -120,7 +120,7 @@ class TestCompareEndpoint(unittest.TestCase):
         self.assertEqual(response.status_code, 422)
         self.assertIn("Both image1 and image2 are required.", response.json()["detail"])
 
-    # ─── 6. Error inavlid file  ──────────────────────────────────────────────
+    # ─── 6. Inavlid file  ──────────────────────────────────────────────
     def test_invalid_file_type(self):
         """Sending a .txt file instead of image should return 422 with error message."""
         txt_content = io.BytesIO(b"this is not an image")
