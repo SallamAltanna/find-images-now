@@ -9,8 +9,8 @@ FINd is an open-source perceptual image hashing library developed by Find Images
 ### 1. Clone the Repository
 
 ```bash
-git clone <repo>
-cd find-images-now
+git clone https://anonymous.4open.science/r/find-images-now-3FD2
+cd find-images-now-3FD2
 ```
 
 ### 2. Set Up Environment Variables
