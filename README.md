@@ -25,6 +25,7 @@ The .env file contains the following default values; these can be adjusted if yo
 | `APP_HOST` | `0.0.0.0` | Host address for the API server |
 | `APP_PORT` | `8945` | Port for the API server (required by FIN) |
 | `LOG_LEVEL` | `DEBUG` | Logging level: DEBUG, INFO, WARNING, ERROR |
+| `APP_ENV` | `development` | Runtime environment of the application |
 
  ### 3. Install Dependencies
 

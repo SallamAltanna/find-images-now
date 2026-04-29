@@ -7,6 +7,7 @@ load_dotenv()
 if __name__ == "__main__":
     port = int(os.getenv("APP_PORT", 8945))
     host = os.getenv("APP_HOST", "0.0.0.0")
+    reload = os.getenv("APP_ENV", "development") == "development"
 
     print(f"Starting FINd API on {host}:{port}...")
     
@@ -14,5 +15,5 @@ if __name__ == "__main__":
         "api.main:app", 
         host=host, 
         port=port, 
-        reload=True  # Helpful for development
+        reload=reload
     )
