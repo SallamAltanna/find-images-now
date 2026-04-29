@@ -1,9 +1,0 @@
-fastapi
-uvicorn
-pillow
-numpy
-scipy
-imagehash
-python-multipart
-python-dotenv
-pytest

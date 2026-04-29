@@ -1,8 +1,6 @@
-# find-images-now
+# FINd — Find Images Now
 
- # FINd — Find Images Now
-
-FINd is an open-source perceptual image hashing library developed by Find Images Now (FIN). It generates 256-bit hash fingerprints from images, enabling efficient similarity detection and duplicate clustering at scale.
+FINd is an open-source perceptual image hashing library that generates 256-bit hash fingerprints from images, enabling efficient similarity detection and duplicate clustering at scale.
 
 ## Installation
 
@@ -31,15 +29,12 @@ The .env file contains the following default values; these can be adjusted if yo
  ### 3. Install Dependencies
 
 ```bash
-pip install -r requirements.txt
-pip install -e .
-```
+# Standard installation:
+pip install .
 
-To include development dependencies (required for running tests):
-```bash
+# Or, for development and testing:
 pip install -e ".[dev]"
 ```
-
 ---
 
 ## How to Run
@@ -110,6 +105,12 @@ curl -X POST "http://127.0.0.1:8945/compare" \
 
 ## How to Run Tests
 
+Ensure you have installed the development dependencies:
+```bash
+pip install -e ".[dev]"
+```
+
+Then run the test suite:
 ```bash
 pytest tests/ -v
 ```

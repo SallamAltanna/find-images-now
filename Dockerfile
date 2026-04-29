@@ -2,9 +2,13 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY . /app
+COPY pyproject.toml /app/
 
-RUN pip install --no-cache-dir -r requirements.txt
+COPY src /app/src
+COPY api /app/api
+COPY utils /app/utils
+
+RUN pip install --no-cache-dir .
 
 EXPOSE 8945
 
