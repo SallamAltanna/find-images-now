@@ -16,5 +16,5 @@ __pycache__/
 # OS Specific
 .DS_Store
 
- build/
- dist/
+build/
+dist/
