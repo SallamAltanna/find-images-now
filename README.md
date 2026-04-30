@@ -134,7 +134,7 @@ tests/test_api.py::TestCompareEndpoint::test_valid_request PASSED
 ```
 ---
 
-## Known Limitations
+## Limitations
 
 - The optimised FINd implementation only supports square images. Non-square images will return a `400` error with a descriptive message.
 - The optimised implementation may produce hashes with a drift of up to 32 bits from the original FINd due to differences in boundary handling.
