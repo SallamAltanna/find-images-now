@@ -64,9 +64,10 @@ class TestCompareEndpoint(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(data["distance"], 0)
 
-    # ─── 3. Regression Test ──────────────────────────────────────────────────
-    def test_regression_assessment_images(self):
-        """API should return expected distance for example images."""
+    # ─── 3. Consistency Test ──────────────────────────────────────────────────
+ 
+    def test_known_distance(self):
+        """Verifies that the API returns the expected distance for a known image pair."""
         img1_path = os.path.join(TEST_IMAGES_DIR, '0000_12268686.jpg')
         img2_path = os.path.join(TEST_IMAGES_DIR, '0000_12270286.jpg')
 
@@ -80,7 +81,8 @@ class TestCompareEndpoint(unittest.TestCase):
 
         data = response.json()
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(data["distance"], 44) # 44 is the expected true value 
+        
+        self.assertEqual(data["distance"], 44) # 44 is the correct value
 
     # ─── 4. Non-Square Images ────────────────────────────────────────────────
     def test_non_square_image(self):

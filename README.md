@@ -119,17 +119,18 @@ pytest tests/ -v
 **Expected output:**
 
 ```
-tests/test_FINd.py::TestFINdOptimisation::test_hash_consistency PASSED                                                    
-tests/test_FINd.py::TestFINdOptimisation::test_hash_length PASSED                                                         
-tests/test_FINd.py::TestFINdOptimisation::test_hash_not_none PASSED                                                       
-tests/test_FINd.py::TestFINdOptimisation::test_rectangle_image_raises_error PASSED                                        
-tests/test_api.py::TestCompareEndpoint::test_invalid_file_type PASSED                                                     
-tests/test_api.py::TestCompareEndpoint::test_missing_image PASSED                                                         
-tests/test_api.py::TestCompareEndpoint::test_non_square_image PASSED                                                      
-tests/test_api.py::TestCompareEndpoint::test_regression_assessment_images PASSED                                          
-tests/test_api.py::TestCompareEndpoint::test_same_image PASSED                                                            
+tests/test_FINd.py::TestFINdOptimisation::test_hash_consistency PASSED                                                             
+tests/test_FINd.py::TestFINdOptimisation::test_hash_length PASSED                                                                  
+tests/test_FINd.py::TestFINdOptimisation::test_hash_not_none PASSED                                                                
+tests/test_FINd.py::TestFINdOptimisation::test_optimisation_drift_threshold PASSED                                                 
+tests/test_FINd.py::TestFINdOptimisation::test_rectangle_image_raises_error PASSED                                                 
+tests/test_api.py::TestCompareEndpoint::test_invalid_file_type PASSED                                                              
+tests/test_api.py::TestCompareEndpoint::test_known_distance PASSED                                                                 
+tests/test_api.py::TestCompareEndpoint::test_missing_image PASSED                                                                  
+tests/test_api.py::TestCompareEndpoint::test_non_square_image PASSED                                                               
+tests/test_api.py::TestCompareEndpoint::test_same_image PASSED                                                                     
 tests/test_api.py::TestCompareEndpoint::test_valid_request PASSED 
-10 passed
+11 passed
 ```
 ---
 
